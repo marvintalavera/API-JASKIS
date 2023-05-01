@@ -106,6 +106,7 @@ db.bounties.find( {
 } )
 // Update and Delete
 // 1. Update the reward for Polarwind to 10000
+//This command should be updateOne
 db.bounties.updateMany(
   {"name": "Polarwind"}, {$set: {"reward": "10000"}}
   )
